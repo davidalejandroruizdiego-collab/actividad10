@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardViewThumbnail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="2dp"
+    app:strokeWidth="0dp"
+    app:strokeColor="@color/design_default_color_primary"> <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="120dp">
+
+    <ImageView
+        android:id="@+id/imageViewThumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_background"
+        android:contentDescription="Miniatura de foto" />
+
+    <ImageView
+        android:id="@+id/imageViewCheck"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_margin="4dp"
+        android:layout_gravity="top|end"
+        android:src="@drawable/ic_check_circle"
+        android:visibility="gone"
+        app:tint="@android:color/white"
+        android:contentDescription="Seleccionado" />
+
+</FrameLayout>
+</com.google.android.material.card.MaterialCardView>
